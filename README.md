@@ -1,2 +1,2 @@
 # econ-society-datacompetition
-The University of Cincinnati Economics Society competition to use public data to create data visualizations describing the economic conditions in the city of Cincinnati compared to the nation
+The University of Cincinnati Economics Society competition to use public data to create data visualizations describing the economic conditions in the city of Cincinnati compared to the nation. I used ggplot2 with the Economist theme to plot data from the U.S Census Bureau and other data from the Federal Reserve Economic Data website. Most of the Census data came in spreadsheet form, which I first edited and converted to CSVs in Excel.

@@ -106,6 +106,10 @@ ggplot(house1,mapping=aes(x=DATE,y=medianlist, group=level,color=level))+
   labs(col="level")+
   xlab("Year")+
   ylab("Median List Price $")+
+  theme(title=element_text(size=30),
+        legend..size = unit(4,'cm'),
+        axis.title=element_text(size=30),
+        axis.text=element_text(size=30))+
   labs(title = "Cincinnati vs Federal Median Housing Price",
        caption = "source: FRED, Realtor.com")
 
@@ -122,7 +126,10 @@ ggplot(educ1, aes(x=education, y=frequency)) +
   theme_economist() +
   scale_colour_economist()+
   xlab("")+
-  ylab("")+
+  ylab("Frequency")+
+  theme(title=element_text(size=30),
+        axis.title=element_text(size=30),
+        axis.text=element_text(size=30))+
   theme(legend.position = "none")+
   labs(title = "Educational Attainment in Cincinnati",
        caption = "source: United States Census Bureau") 
@@ -135,8 +142,11 @@ ggplot(educ2, aes(x=education, y=frequency)) +
   theme_economist() +
   scale_colour_economist()+
   xlab("")+
-  ylab("")+
-  theme(legend.position = "none")+
+  ylab("Frequency")+
+  theme(title=element_text(size=30),
+        axis.title=element_text(size=30),
+        axis.text=element_text(size=30))+
+  #theme(legend.position = "none")+
   labs(title = "Educational Attainment in Cincinnati",
        caption = "source: United States Census Bureau")
                            
